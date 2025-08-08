@@ -52,13 +52,13 @@ python src/deploy_sagemaker.py
 
 ## ✅ Submission Checklist
 
-- [x] Git + DVC used to version code and data
-- [x] Python pipeline modularized into ingest, validation, train, eval
-- [x] Docker image built and tested locally
-- [x] Image pushed to AWS ECR
-- [x] Inference deployed to SageMaker
-- [x] Metrics monitored and reported
-- [x] Governance document and playbook prepared
+- ✅ Git + DVC used to version code and data
+- ✅ Python pipeline modularized into ingest, validation, train, eval
+- ✅ Docker image built and tested locally
+- ✅ Image pushed to AWS ECR
+- ✅ Inference deployed to SageMaker
+- ✅ Metrics monitored and reported
+- ✅ Governance document and playbook prepared
 
 ---
 
