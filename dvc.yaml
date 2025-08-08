@@ -1,0 +1,8 @@
+stages:
+  validate:
+    cmd: python src/data_validation.py
+    deps:
+    - data/staged/data.csv
+    - src/data_validation.py
+    outs:
+    - validation_output.txt

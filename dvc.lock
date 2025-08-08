@@ -1,0 +1,18 @@
+schema: '2.0'
+stages:
+  validate:
+    cmd: python src/data_validation.py
+    deps:
+    - path: data/staged/data.csv
+      hash: md5
+      md5: 7589350ab2d85e9df0fac5365e559c17
+      size: 154017
+    - path: src/data_validation.py
+      hash: md5
+      md5: 18f29572dde3fdfd72f961de9b3175f7
+      size: 528
+    outs:
+    - path: validation_output.txt
+      hash: md5
+      md5: 34d2e011087a4ae3018d6f14857e6007
+      size: 3532

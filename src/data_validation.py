@@ -1,15 +1,15 @@
 import pandas as pd
 
-# Load the staged CSV
 df = pd.read_csv('data/staged/data.csv')
 
-print("🔎 Dataset Overview:")
-print(df.head())
+with open("validation_output.txt", "w", encoding="utf-8") as f:
+    f.write("🔎 Dataset Overview:\n")
+    f.write(df.head().to_string())
+    f.write("\n\n📊 Shape of the dataset:\n")
+    f.write(str(df.shape))
+    f.write("\n\n❓ Missing values per column:\n")
+    f.write(df.isnull().sum().to_string())
+    f.write("\n\n🧬 Data types:\n")
+    f.write(df.dtypes.to_string())
 
-print("\n📊 Shape of the dataset:", df.shape)
-
-print("\n❓ Missing values per column:")
-print(df.isnull().sum())
-
-print("\n🧬 Data types:")
-print(df.dtypes)
+print("✅ Data validation output saved to validation_output.txt")

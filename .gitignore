@@ -17,3 +17,4 @@ __pycache__/
 # Model and data artifacts (optional - if using DVC remote)
 model.joblib
 data/staged/
+/validation_output.txt
