@@ -1,0 +1,5 @@
+outs:
+- md5: 9a475053fed0c26ee95cd4525e50074c
+  size: 162291
+  hash: md5
+  path: german_credit.arff

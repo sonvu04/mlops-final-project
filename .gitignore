@@ -1,0 +1,19 @@
+# Ignore Python virtual environment
+venv/
+
+# Bytecode cache
+__pycache__/
+*.pyc
+
+# DVC cache (optional, if large and remote is used)
+.dvc/cache/
+
+# DVC lock file (optional)
+*.dvc.lock
+
+# VS Code settings (optional)
+.vscode/
+
+# Model and data artifacts (optional - if using DVC remote)
+model.joblib
+data/staged/
