@@ -6,3 +6,10 @@ stages:
     - src/data_validation.py
     outs:
     - validation_output.txt
+  evaluate:
+    cmd: python src/evaluate.py
+    deps:
+    - model.joblib
+    - src/evaluate.py
+    outs:
+    - evaluation.txt

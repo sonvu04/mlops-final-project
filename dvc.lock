@@ -16,3 +16,19 @@ stages:
       hash: md5
       md5: 34d2e011087a4ae3018d6f14857e6007
       size: 3532
+  evaluate:
+    cmd: python src/evaluate.py
+    deps:
+    - path: model.joblib
+      hash: md5
+      md5: bc6cf150ad48ec021ba8b3094184a12b
+      size: 3055033
+    - path: src/evaluate.py
+      hash: md5
+      md5: fed423a305b3986bd6df33a720ef5d9d
+      size: 989
+    outs:
+    - path: evaluation.txt
+      hash: md5
+      md5: a7ed1cac048c2ff51bd33c2a6f8a9fe0
+      size: 363

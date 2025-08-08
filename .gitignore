@@ -18,3 +18,4 @@ __pycache__/
 model.joblib
 data/staged/
 /validation_output.txt
+/evaluation.txt
